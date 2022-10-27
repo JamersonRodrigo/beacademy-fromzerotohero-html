@@ -1,0 +1,223 @@
+<!--
+    Block content (Div)
+        *action
+        *method(GET - Padrão)
+-->
+
+<!--https://meusite.com.br/?nome=luanmonteiro&idade=28-->
+<form action="" method="post" enctype="multipart/form-data">
+    <fieldset name="contato">
+        <legend>Preencha o Formulário de Contato</legend>
+        
+    </fieldset>
+    <br>
+
+    <!--Button
+    <button type="submit">Enviar</button>
+    <button type="reset" name="" class="" id="">Limpar</button> -->
+
+    <!--
+    Label
+        *Associr e identificar um ou mais tag de entrada de dados
+        *Ajuda bastante na acessibilidade
+    Atributos
+        *Usado para fazer a conexão com outros tipos de elementosde formulários-->
+
+
+<label>
+    Nome:
+    <input type="text" id="nome">
+
+    <label for="age">Idade</label>
+    <input type="number" id="age">
+</label>
+
+
+<!--
+    <datalist>
+        *Lista de valorers com sugestões para algum elemento input
+        * Usuário poderá selecionar um dos vlores ou colocar novos valores
+-->
+
+<!--Lista de Professores--> 
+<datalist id="prof-list">
+    <option>Luan</option>
+    <option>Jenifer</option>
+    <option>Regis</option>
+</datalist>
+
+<input type="text" list="prof-list" placeholder="Escolha seu Professor">
+<br>
+<br>
+<fieldset>
+
+    <legend>Trabalhando com Inputs</legend>
+
+    <!--Input Text-->
+
+    <input 
+    type="text"
+    placeholder="Preecha o seu nome"
+    size="60"
+    minlength="8"
+    maxlength="20"
+    title="Preencha o dado"> 
+    <!--require, disabled, readonly-->
+
+     <!--Input Number-->
+
+     <input 
+     type="number"
+     size="50"
+     minlength="6"
+     maxlength="12"
+     title="Preencha o dado">
+
+     <br> 
+
+      <!--Input Email-->
+
+    <input 
+    type="email"
+    placeholder="Preecha o seu nome"
+    size="24"
+    title="Preencha o dado"> 
+
+    <br>
+
+    <!--Input Senha-->
+
+    <input 
+    type="password"
+    size="24"
+    minlength="8"
+    maxlength="16"
+    title="Sua senha precisa se em Hexadecimal"
+    pattern="[0-9a-fA-F]{4,8}"
+    required
+    inputmode="numeric"> 
+
+    <!--Input hidden-->
+    <input type="hidden" value="Eu estou escondido =)">
+
+    <!--Input color-->
+    <input type="color">
+
+    <!--Input date, week, datetime-local, month, time-->
+    <input type="datetime-local">
+    
+
+    <br>
+    <button type="submit">Enviar</button>
+  
+</fieldset>
+<br>
+<fieldset>
+    <legend>Trabalhando com Inputs</legend>
+    <!--Input Type - Check(Checkbox)-->
+
+    <label for="area">
+        Seu interesse maior é por qual área?
+    </label>
+
+    <div>
+        <input 
+        type="checkbox" 
+        name="interessse" 
+        id="frontend" 
+        value="Front-end Luan Monteiro"
+        checked>
+        <label for="frontend">Front-end Luan Monteiro</label>
+        
+        <input
+        type="checkbox"
+        name="interessse" 
+        id="backend"  
+        value="Back-end Regis Santos">
+        <label for="backend">Back-end Regis Santos</label>
+
+        <input 
+        type="checkbox"
+        name="interessse" 
+        id="designuiux" 
+        value="Design UI/UX Jenifer Vieira">
+        <label for="designuiux">Design UI/UX Jenifer Vieira</label>
+    </div>
+
+    <!--Interesse - front-end Luan Monteiro, Back-end Regis Santos...-->
+
+
+    <!--Radio Button-->
+    <h3>Deseja receber notificações da be.academy</h3>
+    <label for="yes">Sim</label>
+    <input type="radio" name="notification" checked id="yes" value="yes">
+
+    <label for="no">Não</label>
+    <input type="radio" name="notification" id="no" value="no">
+    <br>
+    <button type="submit">Enviar</button>
+</fieldset>
+<br>
+<br>
+
+<fieldset>
+    <legend>Trabalhando com Inputs</legend>
+    <!--
+        SELECT
+        Elemento de formulário capaz de criar uma lista de opções a srem selecionadas, DropDown
+    -->
+
+    <label for="teacher">Professores:</label>
+    <select name="select-teacher" id="teacher" multiple size="4">
+        <option value="">Selecione um Professor</option>
+        <option value="Luan Santos">Luan Santos</option>
+        <option value="Moacir Garcia">Moacir Garcia</option>
+        <option value="Jenifer Vieira">Jenifer Vieira</option>
+        <option value="Regis Eduardo">Regis Eduardo</option>
+    </select>
+
+    <!--select-teacher - ['Luan Santos', 'Moacir Garcia']-->
+
+    <!--
+        Input Search
+        *Elemento usado para pesquisar conteúdo
+        *Parecido com o campo "text" pode receber atributos e comportamentos
+    
+    -->
+    
+    <br>
+    <br>
+
+    <input 
+    type="search"
+    name="" 
+    id=""
+    title=""
+    placeholder="Busque um usário pelo id"
+    size="24"
+    pattern="[0-9]{0,3}"
+    title="Busque por o id de até 3 dígitos"
+    required>
+
+    <br>
+    <br>
+    <!--
+        Manipulando arquivos com o file
+        *Usuário poderá fazer upload de 1 ou mais arquivos de acordo com a extensão
+    
+    -->
+
+    <input type="file" value="" accept="image/*"
+    multiple
+    name=""
+    id="">
+<!--.doc, .pdf, audio/*, image/*, .png, .jpg, .xlsx-->
+
+    <br>
+    <button type="submit">Enviar</button>
+</fieldset>
+
+</form>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
